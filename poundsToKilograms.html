@@ -14,7 +14,7 @@
     <label>Enter Pounds <input type="text" id="poundsNumber"></label>
 <label><button type="button" onclick="poundsToKilograms()">Convert</button></label>
     <hr>
-    <div id="kilogramsAnswer"></div>
+    <div id="output"></div>
     </main>
     <footer>
     &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
@@ -30,11 +30,10 @@
         // Read Pounds input from User
         const text = document.getElementById("poundsNumber").value;
         // Convert Pounds into a Number
-        const p = parseFloat (text);
         // Processing
         const k = .453592 * P
         // Output
-        document.getElementById("kilogramsAnswer").innerHTML = " " + Kilograms;
+        document.getElementById("output").innerHTML = " " + Kilograms;
    }
    </script>
 </body>
