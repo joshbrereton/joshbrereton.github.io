@@ -3,38 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <link href="css/style.css" rel="stylesheet">
+<link href="js/scripts" rel="stylesheet">
 <title>template.html</title>
 </head>
 <body>
 <header>
 <h1>Pounds to Kilograms</h1>
-<h2>Josh Brereton</h2>
 </header>
 <main>
     <label>Enter Pounds <input type="text" id="poundsNumber"></label>
-<label><button type="button" onclick="poundsToKilograms()">Convert</button></label>
+<label><button type="button" onclick="pToK()">Convert</button></label>
     <hr>
     <div id="output"></div>
     </main>
     <footer>
     &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
     </footer>
-
-<script>
-    /*  Defining Table
-     Input: input number in Pounds
-     Processing: Convert the number of Pounds into Kilograms (1 Pound=".453592")
-     Output: Display the answer in Kilograms
-    */
-   function poundsToKilograms () {
-        // Read Pounds input from User
-        const text = document.getElementById("poundsNumber").value;
-        // Convert Pounds into a Number
-        // Processing
-        const k = .453592 * P
-        // Output
-        document.getElementById("output").innerHTML = " " + Kilograms;
-   }
-   </script>
 </body>
 </html>
