@@ -1,5 +1,4 @@
-
-    /*  Defining Table
+     /*  Defining Table
      Input: input number in Pounds
      Processing: Convert the number of Pounds into Kilograms (1 Pound=".453592")
      Output: Display the answer in Kilograms
