@@ -11,7 +11,7 @@
 </header>
 <main>
     <h3>Convert kg/m3 to lb/ft3</h3>
-    <label>Enter Kilograms/M3 <input type="text" id="kgtom3"></label>
+    <label>Enter kg/m3 <input type="text" id="kgtom3"></label>
 <label><button onclick="lbtofeet3()">Convert to Pounds per Feet Cubed</button></label>
     <hr>
     <div id="output"></div>
@@ -26,7 +26,7 @@
         let multiplier = Math.pow(10,digits);
         lbtoft3 = Math.round(lbtoft3 * multiplier) / multiplier;
        
-        document.getElementById('output').innerHTML = lbtoft3 + "" + "Pounds/Feet3";
+        document.getElementById('output').innerHTML = lbtoft3 + '' + "Pounds/Feet3";
    }
 </script>
 </body>
