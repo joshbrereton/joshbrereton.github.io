@@ -7,24 +7,27 @@
 </head>
 <body>
 <header>
-<h1>What should I wear?</h1>
+<h1>Calculator</h1>
 </header>
 <main>
-  <label for="">Select Weather</label>
-  <select id="weather">
+    <label>Enter number 1 <input type="text" id="number1"></label>
+<label>Enter number 2 <input type="text" id="number2"></label>
+  <label for="">Select arithmetic</label>
+  <select id="problem">
       <option value="">--Please select option--</option>
-      <option value="hot">Hot</option>
-      <option value="rain">Rain</option>
-      <option value="snow">Snow</option>
-      <option value="unknown">Unknown</option>
-  </select>
-<label><button onclick="weatherConverter()">Footwear</button></label>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+  </select> 
+  <label>Type in Answer <input type="text" id="answer"></label>
+<label><button onclick="calculator()">Calculate</button></label>
     <hr>
     <div id="output"></div>
 </main>
 <footer>
     &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
 </footer>
-<script type="text/javascript" src ="calculator.js"></script>
+<script type="text/javascript" src ="js/calculator.js"></script>
 </body>
 </html>
