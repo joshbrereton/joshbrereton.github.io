@@ -2,19 +2,18 @@
 // Processing: Depending on the answer given by user, compute the answer to the correct selection of Footwear.
 // Output: Output the correct footwear for the weather condition.
 function weatherConverter() {
-    let weatherSelect = document.getElementById('weatherSelect').value;
+    let weather = document.getElementById('weather').value;
     let message;
-    if (weatherSelect == 'hot') {
+    if (weather == 'hot') {
         message = "Sandles";
     }
-    else if (weatherSelect == 'rain') {
+    else if (weather == 'rain') {
         message = "Galoshes";
     }
-    else if (weatherSelect == 'snow') {
+    else if (weather == 'snow') {
         message = "Boots";
     }
-    else if (weatherSelect == 'unknown') 
+    else if (weather == 'unknown') 
         message = "Shoes"
     }
  document.getElementById('output').innerHTML = 'your proper footwear is ' + message;
-}
