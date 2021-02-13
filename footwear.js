@@ -16,4 +16,4 @@ function weatherConverter() {
     else if (weather == 'unknown') 
         message = "Shoes"
     }
- document.getElementById('output').innerHTML = 'your proper footwear is ' + message;
+ document.getElementById('message').innerHTML = 'your proper footwear is ' + message;
