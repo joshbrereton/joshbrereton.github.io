@@ -3,7 +3,7 @@
 // Output: Output the correct footwear for the weather condition.
 function weatherConverter() {
     let weatherSelect = document.getElementById('weatherSelect').value;
-    var message;
+    let message;
     if (weatherSelect == 'hot') {
         message = "Sandles";
     }
@@ -13,8 +13,8 @@ function weatherConverter() {
     else if (weatherSelect == 'snow') {
         message = "Boots";
     }
-    else (weatherSelect == 'unknown') {
+    else if (weatherSelect == 'unknown') 
         message = "Shoes"
     }
-   document.getElementById('output').innerHTML = message; 
+ document.getElementById('output').innerHTML = 'your proper footwear is ' + message;
 }
