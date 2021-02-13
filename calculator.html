@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+<title>footwear.html</title>
+</head>
+<body>
+<header>
+<h1>Calculator</h1>
+</header>
+<main>
+    <label>Enter number 1 <input type="text" id="number1"></label>
+<label>Enter number 2 <input type="text" id="number2"></label>
+  <label for="problem">Select arithmetic</label>
+  <select id="problem">
+      <option value="">--Please select option--</option>
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+  </select> 
+  <label>Type in Answer <input type="text" id="answer"></label>
+<label><button onclick="calculator()">Calculate</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<footer>
+    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script src ="javascript/calculator.js"></script>
+</body>
+</html>

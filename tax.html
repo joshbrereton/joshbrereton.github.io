@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>tax.html</title>
+</head>
+<body>
+<header>
+<h1>Employee after Tax</h1>
+<h2>Josh Brereton</h2>
+</header>
+<main>
+    <label>Enter Regular Hours <input type="text" id="regular"></label>
+<label>Enter Overtime Hours <input type="text" id="overtime"></label>
+<label><button onclick="rAndO()">Find total Money Value</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<footer>
+    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script>
+    /* Declaration Table
+    Input: Put in the Regular hours and the Overtime hours
+    Processing: 15 dollars per hour, 15 * 40 + overtime pay (22.50 *Overtime) - the tax amount.  The Tax amount is the gross pay of the addition of Overtime and Regular pay and * by .15
+    Output: The amount of Overtime money
+    */
+   function rAndO() {
+        // Read regular pay input from User
+        let regular = parseFloat(document.getElementById('regular').value);
+        // processing: find regular hours times 15
+        regular = 15 * regular;
+        let overtime = parseFloat(document.getElementById('overtime').value);
+        // processing: find overtime pay
+        let overtime = 22.50 * overtime;
+        //processing tax
+        let tax = (regular + overtime) * .15;
+        // equation
+        let total = regular + overtime - tax;
+        let digits = 2;
+        let multiplier = Math.pow(10,digits);
+        total = Math.round(total * multiplier) / multiplier;
+        // Output answer in total amount
+        document.getElementById('output').innerHTML = total + '$';
+   }
+
+</script>
+</body>
+</html>

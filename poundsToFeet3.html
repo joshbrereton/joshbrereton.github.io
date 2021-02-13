@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+<title>poundsToFeet3.html</title>
+</head>
+<body>
+<header>
+<h2>Josh Brereton</h2>
+</header>
+<main>
+    <h3>Convert kg/m3 to lb/ft3</h3>
+    <label>Enter kg/m3 <input type="text" id="kgtom3"></label>
+<label><button onclick="lbtofeet3()">Convert to Pounds per Feet Cubed</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<script>
+  function lbtofeet3() {
+        // Read KG/M3 input from User
+        let kgtom3 = parseFloat(document.getElementById('kgtom3').value);
+        
+        let lbtoft3 = kgtom3 * 0.062428;
+        let digits = 1;
+        let multiplier = Math.pow(10,digits);
+        lbtoft3 = Math.round(lbtoft3 * multiplier) / multiplier;
+       
+        document.getElementById('output').innerHTML = lbtoft3 + '' + "Pounds/Feet3";
+   }
+</script>
+</body>
+</html>

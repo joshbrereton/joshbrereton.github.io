@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>volume.html</title>
+</head>
+<body>
+<header>
+<h2>Josh Brereton</h2>
+</header>
+<main>
+    <h3>Volume</h3>
+    <label>Enter Radius <input type="text" id="radius"></label>
+<label>Enter Height <input type="text" id="height"></label>
+<label><button onclick="findVol()">volume</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<footer>
+    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script>
+    /* Description table
+     input: Numbers radius and height are put in
+     processing: Volume = pie * r*r *height
+     */
+     function volume() {
+        //input
+        let radius = parseFloat(document.getElementById('radius').value);
+        let height = parseFloat(document.getElementById('height').value);
+        //processing
+        let totalVolume = Math.PI * r *r * h;
+        let digits = 0;
+        let multiplier = Math.pow(10,digits);
+        totalVolume = Math.round(totalVolume * multiplier) / multiplier;
+        // Output answer in Volume
+        document.getElementById('output').innerHTML = totalVolume = 'volume';
+   }
+</script>
+</body>
+</html>
