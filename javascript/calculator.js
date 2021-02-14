@@ -8,22 +8,23 @@ function calculator () {
     let problem = (document.getElementById('problem').value);
     let correctAnswer;
     switch (problem) {
-      case '+':
+      case "+":
       correctAnswer = number1 + number2;
       break;
-      case '-':
+      case "-":
       correctAnswer = number1 - number2;
         break;
-        case '/':
+        case "/":
         correctAnswer = number1 / number2;
         break;
-        case '*':
+        case "*":
         correctAnswer = number1 * number2;
         break;
     }
-         if (answer == correctAnswer) {
+        if (answer == correctAnswer) {
           document.getElementById('output').innerHTML = "Correct! 🏆";
         }
           else {
             document.getElementById('output').InnerHTML = "incorrect 😢";
  }
+}
