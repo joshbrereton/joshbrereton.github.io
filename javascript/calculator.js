@@ -21,12 +21,9 @@ function calculator () {
         correctAnswer = number1 * number2;
         break;
     }
-      let message;
-         if (correctAnswer == 'answer') {
-          message = "Correct! 🏆";
+         if (answer == correctAnswer) {
+          document.getElementById('output').innerHTML = "Correct! 🏆";
         }
           else {
-            message = "incorrect 😢";
-        }
-        document.getElementById('output').innerHTML = message;
+            document.getElementById('output').InnerHTML = "incorrect 😢";
  }
