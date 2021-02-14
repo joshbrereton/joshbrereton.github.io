@@ -21,7 +21,6 @@ function calculator () {
         correctAnswer = number1 * number2;
         break;
     }
-        let message;
         switch (answer) {
           case correctAnswer:
           document.getElementById('output').innerHTML = "Correct! 🏆";
