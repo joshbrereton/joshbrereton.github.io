@@ -21,10 +21,12 @@ function calculator () {
         correctAnswer = number1 * number2;
         break;
     }
-        if (answer == correctAnswer) {
+        let message;
+        switch (answer) {
+          case correctAnswer:
           document.getElementById('output').innerHTML = "Correct! 🏆";
-        }
-          else {
-            document.getElementById('output').InnerHTML = "incorrect 😢";
+          break;
+          default:
+            document.getElementById('output').innerHTML = "incorrect 😢";
  }
 }
