@@ -5,6 +5,7 @@ function calculator () {
     let number1 = parseFloat(document.getElementById('number1').value);
     let number2 = parseFloat(document.getElementById('number2').value);
     let answer = parseFloat(document.getElementById('answer').value);
+    let problem = (document.getElementById('problem').value);
     let correctAnswer;
     switch (problem) {
       case '+':
@@ -20,12 +21,12 @@ function calculator () {
         correctAnswer = number1 * number2;
         break;
     }
-        let message;
-        if (correctAnswer == 'answer') {
+      let message;
+         if (correctAnswer == 'answer') {
           message = "Correct! 🏆";
         }
           else {
             message = "incorrect 😢";
-            document.getElementById('output').innerHTML = message;
-          }
         }
+        document.getElementById('output').innerHTML = message;
+ }
