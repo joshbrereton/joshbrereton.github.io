@@ -8,4 +8,4 @@ if (1 <= dayOfWeek && dayOfWeek <= 5) {
 } else if ((6 == dayOfWeek || dayOfWeek == 0) && (month == 0 && dayOfWeek == 1) && (month == 6 && dayOfWeek == 4) && (month == 11 && dayOfWeek == 25)) {
     message = 'Sleep in!';
 }
-document.getElementById('output').innerHTML = message;
+document.getElementById('output').innerHTML = '<strong>' + message + '</strong>';
