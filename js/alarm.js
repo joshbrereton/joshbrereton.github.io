@@ -5,7 +5,8 @@
     var message;
 if (1 <= dayOfWeek && dayOfWeek <= 5) {
     message = 'Get Up!';
-} else if ((6 == dayOfWeek || dayOfWeek == 0) && (month == 0 && dayOfWeek == 1) && (month == 6 && dayOfWeek == 4) && (month == 11 && dayOfWeek == 25)) {
+} 
+else if (dayOfWeek == 6 || dayOfWeek == 0 || (month == 0 && dayOfMonth == 1) || (month == 11 && dayOfMonth == 25) || (month == 6 && dayOfMonth == 4)) {
     message = 'Sleep in!';
 }
 document.getElementById('output').innerHTML = '<strong>' + message + '</strong>';
