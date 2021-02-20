@@ -1,4 +1,7 @@
- var now = new Date();
+// Notes Table
+// Processing: receive input from the User Computer to see if the day is a weekday, weekend, or 1 of the 3 provided holidays
+// Output: Output text of "Sleep in!" or "Get up!"
+var now = new Date();
     var month = now.getMonth();
     var dayOfMonth = now.getDate();
     var dayOfWeek = now.getDay();
