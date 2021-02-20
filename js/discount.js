@@ -4,16 +4,15 @@
 // Output: Outpute the sales total
  var dayOfWeek = new Date().getDay();
  var subtotal = parseFloat(document.getElementById('subtotal').value);
- var salesTax = .06;
- var discount = .1;
- var sales = subtotal * discount
- var message;
- function SalesRate () {
+ var total;
+ var totalTax
+ function compute () {
     if (dayOfWeek == 1 || dayOfWeek == 2 && (subtotal > 50)) {
-        message= (subtotal - sales) * salesTax;
+        total = subtotal * .9;
     }
     else {
-        message = (subtotal * salesTax) + subtotal;
+        total = subtotal;
     }
-    document.getElementById('output').innerHTML = "Your Sales total is $" + message;
- }
+    totalTax = total * 1.06;
+}
+    document.getElementById('output').innerHTML = "Your Sales total is $" + totalTax;
