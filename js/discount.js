@@ -4,14 +4,17 @@
 // Output: Outpute the sales total
  var dayOfWeek = new Date().getDay();
  var total;
- var totalTax = total * 1.06;
- function compute () {
+ function compute() {
       var subtotal = parseFloat(document.getElementById('subtotal').value);
-    if (dayOfWeek == 1 || dayOfWeek == 2 && (subtotal > 50)) {
+    if (50 < subtotal && (dayOfWeek == 2 || dayOfWeek == 3)) {
         total = subtotal * .9;
     }
     else {
         total = subtotal;
-        }
+    }
+    let digits = 2;
+        let multiplier = Math.pow(10,digits);
+        totalTax = Math.round(totalTax * multiplier) / multiplier;
+    totalTax= total * 1.06;
     document.getElementById('output').innerHTML = totalTax;
  }
