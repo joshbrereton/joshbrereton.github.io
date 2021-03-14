@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <title>evenlyDivisible.html</title>
+</head>
+<body>
+  <p>Please enter a start number, end number and a divisor:</p>
+  <input type="text" id="start" size="5">
+  <input type="text" id="end" size="5">
+  <input type="text" id="divisor" size="5">
+  <button type="button" onclick="divisorClick()">Click</button>
+  <div id="output"></div>
+
+  <script>
+    /* Input: Receive start and end number from User and receive a divisor number from User.
+     * Processing: Process the numbers that can go into the start and end number from the Divisor.
+     * Output: Output the numbers to the User
+     */
+    function divisorClick() {
+        let start = parseFloat(document.getElementById('start').value);
+        let end = parseFloat(document.getElementById('end').value);
+        let divisor = parseFloat(document.getElementById('divisor').value);
+        let output;
+        if (start && end % divisor == 0) {
+            output = divisor / start && end + ' '; 
+        }
+        for (let i = start; i <= end; i++) {
+         
+        }
+         document.getElementById('output').innerHTML = output;
+    }
+  </script>
+</body>
+</html>

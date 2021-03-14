@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+<title>power.html</title>
+</head>
+<body>
+<header>
+<h2>Josh Brereton</h2>
+</header>
+<main>
+    <h3>2 to the Power</h3>
+<label><button onclick="powerClick()">Add Numbers</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<footer>
+    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script>
+    /* Defining Table:
+    input: All of 2 to the ^ 0- 31.
+    Processeing: Process the mathmatic equation of 2 to the 0 power all the way to 2 to the 31st power.
+    Output: Output all of the answers in 1 line from the 0-31st powers.
+    */
+   function powerClick() {
+       let output = '';
+       let sum = 2;
+       for (let i = 0; i <= 31; i++) {
+        let multiplier = Math.pow(sum , i);
+      output += ' , ' + multiplier;
+       }
+       document.getElementById('output').innerHTML = output;
+   }
+</script>
+</body>
+</html>
