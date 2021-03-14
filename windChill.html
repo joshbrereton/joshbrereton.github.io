@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<link href="css/style.css" rel="stylesheet">
-<title>template.html</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>windChill.html</title>
 </head>
+
 <body>
-<header>
-<h2>Josh Brereton</h2>
-</header>
-<main>
-    <h3>Calculate Wind Chill<h3>
-    <label>Temperature: <input type="text" id="temperature"></label>
-<label>Wind Speed: <input type="text" id="windSpeed"></label>
-<label><button onclick="doInputOutput()">Calculate Wind Chill</button></label>
-    <hr>
-    <div id="output"></div>
-</main>
-<footer>
-    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
-</footer>
-<script src="js/windChill.js"></script>
+    <header>
+        <h2>Josh Brereton</h2>
+    </header>
+    <main>
+        <h3>Calculate Wind Chill<h3>
+                <label>Temperature: <input type="text" id="temperature"></label>
+                <label>Wind Speed: <input type="text" id="windSpeed"></label>
+                <label><button onclick="doInputOutput()">Wind Chill</button></label>
+                <hr>
+                <div id="output"></div>
+    </main>
+    <footer>
+        &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        /* Defining Table
+    Input: Receive the temperature and the Wind Speed from User.
+    Processing: Use the equation of Wind Chill to get the temperature as long as the temp is under 50 and wind 
+    speed is more than three: f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16.
+    output: Output the Temperature to the User.
+    */
+        function doInputOutput() {
+            let temperature = parseFloat(document.getElementById('temperature').value);
+            let windSpeed = parseFloat(document.getElementById('windSpeed').value);
+            if (temperature < 50 && windSpeed > 3) {
+                let finalTemperature = windChill(temperature, windSpeed);
+            }
+            else {
+                finalTemperature = temperature;
+            }
+
+            document.getElementById('output').innerHTML = finalTemperature;
+        }
+        function windChill(tempF, speed) {
+            finalTemperature = 35.74 + (.6215) * (tempF) - (35.75) * Math.pow(speed, .16) + .4275 * tempF * Math.pow(speed, .16);
+            finalTemperature = Math.round(finalTemperature * 100) / 100;
+            return finalTemperature;
+        }
+    </script>
 </body>
+
 </html>
