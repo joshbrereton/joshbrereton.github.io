@@ -32,11 +32,11 @@
         function doInputOutput() {
             let temperature = parseFloat(document.getElementById('temperature').value);
             let windSpeed = parseFloat(document.getElementById('windSpeed').value);
-            if (temperature < 50 && windSpeed > 3) {
-                let finalTemperature = windChill(temperature, windSpeed);
+            if (temperature > 50 || windSpeed < 3) {
+                let finalTemperature = temperature;
             }
             else {
-                finalTemperature = temperature;
+                finalTemperature = windChill(temperature, windSpeed);;
             }
 
             document.getElementById('output').innerHTML = finalTemperature + ' ºF';
