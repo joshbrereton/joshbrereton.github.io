@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <link href="css/style.css" rel="stylesheet">
-<title>template.html</title>
+<title>invest.html</title>
 </head>
 <body>
 <header>
-<h1>Week 3: Add Two Numbers</h1>
 <h2>Josh Brereton</h2>
 </header>
 <main>
-    <h3>Add Two Numbers</h3>
-    <label>Enter Number One: <input type="text" id="number1"></label>
-<label>Enter Number Two: <input type="text" id="number2"></label>
-<label><button onclick="addNumbers()">Add Numbers</button></label>
+    <h3>Invest</h3>
+     <label>Amount invested: Principal <input type="text" id="principal"></label>
+<label>Annual Rate <input type="text" id="annualRate"></label>
+<label>Number of years <input type="text" id="years"></label>
+<label>Periods per year <input type="text" id="periodsPerYear"></label>
+<label><button onclick="doFV()">Add Numbers</button></label>
     <hr>
     <div id="output"></div>
 </main>
