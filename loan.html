@@ -10,11 +10,14 @@
 <h2>Josh Brereton</h2>
 </header>
 <main>
-    <h3>Loan</h3>
-    <label>Enter Number One: <input type="text" id="number1"></label>
-<label>Amount invested: Principal <input type="text" id="princip"></label>
-<label><button onclick="doPayment()">Add Numbers</button></label>
-<label><button onclick="doBalance()">Add Numbers</button></label>
+    <h3>Loan Calculator </h3>
+    <label>Amount borrowed (Principal) <input type="text" id="amountBorrowed"></label>
+<label>Annual Interest Rate (example: .065) <input type="text" id="annualInterestRate"></label>
+<label>Number of Years <input type= "text" id="numberOfYears"></label>
+<label>Payments per Year <input type= "text" id="paymentsPerYear"></label>
+<label><button onclick="doPayment()">Compute Payment</button></label>
+<label>Number of payments paid to date <input type= "text" id="paymentsPaid"></label>
+<label><button onclick="doBalance()">Compute Payoff Amount</button></label>
 
     <hr>
     <div id="output"></div>
