@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet">
+<title>array1.html</title>
+</head>
+<body>
+<header>
+<h1>Arrays</h1>
+<h2>Josh Brereton</h2>
+</header>
+<main>
+<label><button onclick="test()">Outputs for Sum and Middle Numbers of Array</button></label>
+    <hr>
+    <div id="output"></div>
+</main>
+<footer>
+    &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+</footer>
+<script> 
+/* Defining Table
+ * Input: no user input
+ * Processing: Test the addEnds and getMiddle functions by calling them.
+ * Output: The values returned from the addEnds and getMiddle functions.
+ */
+function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the addEnds function by calling it two times.
+    let sum1 = addEnds(list1);
+    let sum2 = addEnds(list2);
+    // Test the getMiddle function by calling it two times.
+
+
+    // Build a string to display to the user.
+    let output =
+            sum1 + '<br>' +
+            sum2 + '<br>';
+           
+    // Display the output string for the user to see.
+    document.getElementById('output').innerHTML = output;
+}
+function addEnds(list) {
+     let list1 = [ 17, 8, 9, 5, 20 ];
+     let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+  let sum1 = (list1[0]) + (list1[list1.length-1]);
+  return sum1;
+  let sum2 = (list2[0]) + (list2[list2.length-1]);
+  return sum2;
+}
+</script>
+</body>
+</html>

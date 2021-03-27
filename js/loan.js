@@ -15,12 +15,10 @@ function doPayment() {
 }
 function computePayment(principal, annualRate, years, periodsPerYear) {
 let a = principal;
-let r = annualRate / 12;
-periodsPerYear = 12;
+let r = annualRate / periodsPerYear
 let n = years * periodsPerYear;
-p = a * r / 1 - (Math.pow(1 + r, -n));
-p = Math.round(p * 100) / 100;
-return p;
+p = a * r / (1 - Math.pow(1 + r, -n));
+return p.toFixed(2);
 }
 function doBalance() {
     let principal = parseFloat(document.getElementById('amountBorrowed').value);
@@ -34,10 +32,9 @@ function doBalance() {
 function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
 let a = principal;
 let d = numberOfPaymentPaidToDate;
-let r = annualRate / 12;
+let r = annualRate / periodsPerYear;
 let n = years * 12;
-let p = a * r / 1 - (Math.pow(1 + r, -n));
+let p = a * r / (1 - Math.pow(1 + r, -n));
 let b = a * (Math.pow(1 + r, d)) - p * ((Math.pow(1 + r, d)) - 1) / r;
-b = Math.round(b * 100) / 100;
-return b;
+return b.toFixed(2);
 }
