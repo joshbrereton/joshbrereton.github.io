@@ -37,23 +37,25 @@
             // Test the multiply function by calling it two times.
             let mult1 = multiply(list1, 3);
             let mult2 = multiply(list2, 4);
-            let mult3 = mult1.map(multiply);
-            let mult4 = mult2.map(multiply);
+        
 
             // Build a string to display to the user.
             let output =
                 count1 + '<br>' +
                 count2 + '<br>' +
-                mult3 + '<br>' +
-                mult4;
+                mult1 + '<br>' +
+                mult2;
 
             // Display the output string for the user to see.
             document.getElementById('output').innerHTML = output;
         }
-        function multiply(list, multiplier) {
-            return list * multiplier;
+            function multiply(list, multiplier) {
+let product = [];
+            for (let i = 0; i < list.length; i++) {
+                product[i] = list[i] * multiplier;
+               }
+               return '[' + product + ']';
         }
-        
         function countEvens(list) {
             let a = list.length;
             let evenNumbers = 0;
