@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>array2.html</title>
+</head>
+
+<body>
+    <header>
+        <h2>Josh Brereton</h2>
+    </header>
+    <main>
+        <h3>Continuation with Arrays</h3>
+        <label><button onclick="test()">Finding the Even numbers and the multiplier of the Arrays</button></label>
+        <hr>
+        <div id="output"></div>
+    </main>
+    <footer>
+        &copy;2021 &bull; Josh Brereton &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        /* Defining Table
+         * Input: no user input
+         * Processing: Test the countEvens and multiply functions by calling them.
+         * Output: The values returned from the countEvens and multiply functions.
+         */
+        function test() {
+            let list1 = [17, 8, 9, 5, 20];
+            let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
+
+            // Test the countEvens function by calling it two times.
+            let count1 = countEvens(list1);
+            let count2 = countEvens(list2);
+
+            // Test the multiply function by calling it two times.
+            let mult1 = multiply(list1, 3);
+            let mult2 = multiply(list2, 4);
+            let mult3 = mult1.map(multiply);
+            let mult4 = mult2.map(multiply);
+
+            // Build a string to display to the user.
+            let output =
+                count1 + '<br>' +
+                count2 + '<br>' +
+                mult3 + '<br>' +
+                mult4;
+
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+        function multiply(list, multiplier) {
+            return list * multiplier;
+        }
+        
+        function countEvens(list) {
+            let a = list.length;
+            let evenNumbers = 0;
+            for (let i = 0; i < a; i++) {
+                if (list[i] % 2 == 0) {
+                    evenNumbers = evenNumbers + 1;
+                }
+            }
+            return evenNumbers;
+        }
+    </script>
+</body>
+
+</html>
