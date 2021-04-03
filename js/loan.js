@@ -33,7 +33,7 @@ function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPa
 let a = principal;
 let d = numberOfPaymentPaidToDate;
 let r = annualRate / periodsPerYear;
-let n = years * 12;
+let n = years * periodsPerYear;
 let p = a * r / (1 - Math.pow(1 + r, -n));
 let b = a * (Math.pow(1 + r, d)) - p * ((Math.pow(1 + r, d)) - 1) / r;
 return b.toFixed(2);
