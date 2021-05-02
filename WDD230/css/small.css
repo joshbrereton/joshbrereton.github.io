@@ -1,5 +1,4 @@
 img {
-    float: right;
     margin: 10px;
 }
 body {
@@ -20,7 +19,8 @@ h2 {
 h2, nav {
   font-family: 'Noto Serif', serif;  
 }
-nav {
+nav ul {
+     text-align: center;
       margin: 1.25rem auto;
     max-width: 760px;
 }
