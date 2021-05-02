@@ -1,0 +1,39 @@
+img {
+    margin: 10px;
+    width: 100%;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+header, main, footer, h2, p {
+    margin: 1.25rem auto;
+    max-width: 760px;
+    text-align: center;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1rem;
+}
+h2, p {
+  font-family: 'Noto Serif', serif;  
+}
+header {
+    background-color: aqua;
+    color: white;
+    padding: 1rem;
+}
+img {
+    background-color: aqua;
+    height: 200px;
+    width: auto;
+}
+footer {
+    background-color: aqua;
+    padding: .5rem;
+}
+#lastupdate {
+    color: red;
+}
