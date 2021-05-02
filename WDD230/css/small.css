@@ -11,6 +11,15 @@ header, main, footer, h2, p {
     max-width: 760px;
     text-align: center;
 }
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1rem;
+}
+h2, nav {
+  font-family: 'Noto Serif', serif;  
+}
 nav {
       margin: 1.25rem auto;
     max-width: 760px;
@@ -30,5 +39,5 @@ footer {
     padding: .5rem;
 }
 #lastupdate {
-    color: yellow;
+    color: red;
 }
