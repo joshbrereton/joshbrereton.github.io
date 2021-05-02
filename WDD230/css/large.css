@@ -1,16 +1,16 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 25em) {
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 header, footer {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 header img {
      float: right;
-    box-shadow: 0 0 30px #444;
-    border-radius: 0 10px 0 0;
+    box-shadow: 0 0 60px #444;
+    border-radius: 0 20px 0 0;
 }
 }
