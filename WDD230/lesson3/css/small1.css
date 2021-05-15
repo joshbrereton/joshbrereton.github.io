@@ -1,0 +1,53 @@
+.gem {
+    width: 65px;
+    height: 65px;
+}
+main nav ul {
+    padding: 10px;
+    display: inline;
+}
+
+header, footer {
+    background-color: #4785C2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+h1 {
+    font-size: 2rem;
+    color: #140800;
+}
+h2, p {
+    color: #140800;
+    font-family: 'Lora', serif;
+}
+nav {
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 2px 15px grey;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul li {
+    display: inline;
+}
+main section nav {
+margin: 0 auto;
+}
+nav ul li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: .95rem;
+}
