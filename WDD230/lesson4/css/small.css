@@ -1,0 +1,57 @@
+nav {
+    max-width: 760px;
+    background-color: #140800;
+}
+.navigation {
+    list-style: none;
+    padding: 0px;
+}
+.navigation a:hover {
+    color: white;
+    background-color: blue;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    color: lightyellow;
+    font-weight: 700px;
+    text-align: left;
+    text-decoration: none;
+}
+header, footer {
+    background-color: #4785C2;
+    padding: 10px;
+}
+h1 {
+    font-size: 1.5rem;
+    color: #140800;
+}
+h2 {
+    font-size: 1rem;
+}
+h2, p {
+    color: #140800;
+    font-family: 'Lora', serif;
+}
+img {
+    height: 65px;
+    width: 65px;
+}
+header body img {
+     float: left;
+    margin-right: 20px;
+}
+main, header, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+    text-align: center;
+}
+.gem {
+    float: left;
+}
