@@ -5,14 +5,14 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+.navigation li:first-child {
+    display: none;
+}
  .navigation {
         display: flex;
     }
     .navigation li {
         flex: 1 1 auto;
-    }
-    .navigation li:first-child {
-        display: none;
     }
     .navigation a {
         text-align: center;
