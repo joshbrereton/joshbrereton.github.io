@@ -19,9 +19,6 @@ h2 {
 h2, nav {
   font-family: 'Noto Serif', serif;  
 }
-nav {
-     text-align: center;
-}
 header {
     background-color: aqua;
     color: white;
@@ -38,4 +35,11 @@ footer {
 }
 #lastupdate {
     color: red;
+}
+.start a:hover {
+    background-color: blue;
+    color: white;
+}
+.start {
+    text-align: left;
 }
