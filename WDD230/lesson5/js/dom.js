@@ -13,6 +13,7 @@ if (fav.value != '') {
     // Add button to the li
 li.append(deletebutton);
 output.append(li);
+    // Delete button in effect
 deletebutton.addEventListener('click', function() {
 output.removeChild(li);
 fav.focus;
