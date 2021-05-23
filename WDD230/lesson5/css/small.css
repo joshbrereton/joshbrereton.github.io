@@ -17,6 +17,12 @@ nav {
     color: white;
     background-color: blue;
 }
+.navigation a:active {
+ background-color: darkorchid;
+}
+.navigation a:focus {
+    background-color: darkorchid;
+}
 .navigation li:first-child {
     display: block;
 }
@@ -78,9 +84,6 @@ header {
     text-align: center;
     margin: auto;
 }
-#currentDate {
-    color: yellow;
-}
 header {
     display: flex;
     align-items: center;
@@ -93,4 +96,7 @@ header {
 .r {
     font-style: italic;
     font-weight: 700px;
+}
+#lastupdate {
+    color: darkorchid;
 }
