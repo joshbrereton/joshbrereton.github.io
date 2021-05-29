@@ -1,0 +1,41 @@
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 10%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    h1 {
+        font-size: 3rem;
+    }
+    h2 { 
+        font-size: 2.5rem;
+    }
+    .herodiv {
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        border: 2px solid #000;
+        padding: 5px;
+        background: radial-gradient(orange,black);
+        box-shadow: 0 0 30px #333;
+        opacity: .9;
+    }
+.love {
+    display: flex;
+}
+.connect {
+    flex: 1 1 100%;
+    flex-direction: row-reverse;
+}
+}
