@@ -5,8 +5,10 @@ h1, body {
 picture {
     display: grid;
     grid-template-columns: 1fr;
+}
+main picture img {
     text-align: center;
-    align-items: center;
+    align-content: center;
 }
 body {
     max-width: 980px;
