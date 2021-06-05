@@ -1,17 +1,13 @@
 h1, body {
-    text-align: center;
     margin: 0 auto;
 }
 picture {
     display: grid;
     grid-template-columns: 1fr;
 }
-main picture img {
-    text-align: center;
-    align-content: center;
-}
 body {
     max-width: 980px;
+    text-align: center;
 }
 img {
     width: 400px;
