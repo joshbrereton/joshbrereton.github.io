@@ -1,6 +1,7 @@
-body, main {
+body, h1 {
     margin: 0;
     padding: 0;
+    max-width: 980px;
 }
 nav {
     max-width: 760px;
@@ -171,7 +172,12 @@ header {
 picture img[data-src] {
     filter: blur(.2em);
 }
-picture img {
+.start {
     filter: blur(0em);
     transition: filter 0.5s;
+}
+.start {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
