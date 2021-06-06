@@ -44,7 +44,10 @@
 align-items: center;
     justify-items: center;
 }
-.love {
+.happy {
     margin: 0 auto;
+}
+.love:hover {
+    box-shadow: 0 0 50px;
 }
 }

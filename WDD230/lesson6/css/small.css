@@ -1,6 +1,5 @@
-body, h1 {
-    margin: 0;
-    padding: 0;
+body, h1, main, figure {
+    margin: 0 auto;
     max-width: 980px;
 }
 nav {
