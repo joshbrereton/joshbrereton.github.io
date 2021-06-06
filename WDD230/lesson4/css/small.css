@@ -86,3 +86,16 @@ header {
     font-style: italic;
     font-weight: 700px;
 }
+.navigation a:active {
+ background-color: darkorchid;
+}
+.navigation a:focus {
+    background-color: darkorchid;
+}
+picture img[data-src] {
+    filter: blur(.2em);
+}
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}

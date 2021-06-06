@@ -38,4 +38,8 @@
     flex: 1 1 100%;
     flex-direction: row-reverse;
 }
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 }

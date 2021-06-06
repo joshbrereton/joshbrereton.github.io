@@ -1,4 +1,4 @@
-body {
+body, main {
     margin: 0;
     padding: 0;
 }
@@ -40,7 +40,7 @@ nav {
 .responsive li {
     display: block;
 }
-header, footer {
+header, footer, .love{
     background-color: #4785C2;
     padding: 10px;
 }
@@ -145,4 +145,33 @@ header {
     border: 2px solid black;
     padding: 25px;
     margin: 0 5px;
+}
+.love {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.run {
+    grid-row: 1;
+    grid-column: 2/3;
+}
+.connect {
+    grid-row: 1;
+    grid-column: 1;
+}
+.social {
+    grid-row: 2;
+}
+.navigation a:active {
+ background-color: darkorchid;
+}
+.navigation a:focus {
+    background-color: darkorchid;
+}
+picture img[data-src] {
+    filter: blur(.2em);
+}
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
