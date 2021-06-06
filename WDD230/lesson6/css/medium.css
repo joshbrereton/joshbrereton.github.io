@@ -40,12 +40,13 @@ h2 {
 .connect {
     flex: 1 1 100%;
 }
-.start {
+.wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.love {
     align-items: center;
     justify-items: center;
+}
+.love {
+    margin: 0 auto;
 }
 }

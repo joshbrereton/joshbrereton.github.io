@@ -169,15 +169,19 @@ header {
 .navigation a:focus {
     background-color: darkorchid;
 }
-picture img[data-src] {
+.love[data-src] {
     filter: blur(.2em);
 }
-.start {
+.love {
     filter: blur(0em);
     transition: filter 0.5s;
 }
-.start {
+.wrap {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
+}
+.love {
+    margin: 0 auto;
 }
