@@ -1,0 +1,223 @@
+body, h1, main, figure {
+    margin: 0 auto;
+    max-width: 980px;
+}
+nav {
+    max-width: 760px;
+    background-color: #140800;
+}
+.navigation {
+    list-style: none;
+    padding: 0px;
+}
+.navigation li {
+    text-align: center;
+}
+.navigation a:hover {
+    color: white;
+    background-color: blue;
+}
+.navigation a:active {
+ background-color: darkorchid;
+}
+.navigation a:focus {
+    background-color: darkorchid;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    color: yellow;
+    font-weight: 700px;
+    text-align: left;
+    text-decoration: none;
+}
+.responsive li {
+    display: block;
+}
+header, footer, .love{
+    background-color: #4785C2;
+    padding: 10px;
+}
+h1 {
+    font-size: 1.5rem;
+    color: #140800;
+}
+h2 {
+    font-size: 1rem;
+}
+h2, p {
+    color: #140800;
+    font-family: 'Lora', serif;
+}
+.gem {
+    height: 65px;
+    width: 65px;
+    float: left;
+    margin-right: 10px;
+}
+.sun {
+    height: 200px;
+width: 750px;
+text-align: center;
+}
+.map {
+    height: 250px;
+width: 300px;
+text-align: left;
+}
+aside {
+    display: none;
+}
+main, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+    text-align: center;
+}
+header {
+    max-width: 760px;
+    text-align: center;
+    margin: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.r {
+    font-style: italic;
+    font-weight: 700px;
+}
+#lastupdate {
+    color: yellow;
+}
+.herodiv .centered img {
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    display: block;
+}
+.happy {
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+.mid {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+.sunny {
+    padding: 2px 2px 2px 2px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 0 5px;
+}
+.sunandclouds {
+     padding: 2px 2px 2px 2px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 0 5px;
+}
+.friday {
+     padding: 2px 2px 2px 2px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 0 5px;
+}
+.saturday {
+     padding: 2px 2px 2px 2px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 0 5px;
+}
+.sunday {
+     padding: 2px 2px 2px 2px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 0 5px;
+}
+.love {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.run {
+    grid-row: 1;
+    grid-column: 2/3;
+}
+.connect {
+    grid-row: 1;
+    grid-column: 1;
+}
+.social {
+    grid-row: 2;
+}
+.navigation a:active {
+ background-color: darkorchid;
+}
+.navigation a:focus {
+    background-color: darkorchid;
+}
+.love[data-src] {
+    filter: blur(.2em);
+}
+.love {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.love {
+    margin: 0 auto;
+}
+table, th, td {
+    border: 1px solid #e7ffed;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+table {
+    margin: 0 auto;
+}
+thead {
+    background-color: #7fb9c2;
+    color: black;
+}
+tfoot {
+    background-color: #7fb9c2;
+}
+tbody th {
+    background-color: #628ca6;
+    color: white;
+}
+tbody tr td:nth-child(10) {
+    font-style: italic;
+}
+.ready {
+    background-color: #628ca6;
+    color: white;
+}
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+body {
+    font-family: Ubuntu, sans-serif;
+}
