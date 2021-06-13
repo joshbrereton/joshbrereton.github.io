@@ -196,11 +196,21 @@ form legend {
     margin: 0 5px;
     padding: 0 2px;
 }
+form label {
+    text-align: left;
+}
 form label.top, form div {
     display: block;
     padding-top: 5px;
     color: red;
     font-size: 14px;
+}
+form label.roll {
+    display: block;
+    padding-top: 5px;
+    color: red;
+    font-size: 14px;
+    margin: 20px 0;
 }
 form label.top input, form label.top select {
     display: block;
