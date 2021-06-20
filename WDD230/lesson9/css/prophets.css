@@ -5,7 +5,7 @@ image {
     grid-template-columns: 1fr;
 }
 header, footer {
-    color: #4785C2;
+    color: black;
     background-color: #4785C2;
 }
 h1 {
