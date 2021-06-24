@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 32.5em) {
 h1 {
     font-size: 2.5rem;
 }
@@ -49,16 +49,23 @@ h2 {
 .happy {
     margin: 0 auto;
 }
-.ss, .fh, .p {
+.p, .ss, .fh {
     width: 200px;
-    height: 200px;
-    display: inline;
+    height: 100%;
+    display: block;
 }
 .towninfo, .towninfo2, .towninfo3 {
     display: inline;
+    width: 200px;
 }
 article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+article:nth-child(odd) .towninfo, .towninfo2, .towninfo3 {
+    grid-column: 1;
+}
+article:nth-child(odd) .fh, .ss, .p {
+    grid-column: 2;
 }
 }
