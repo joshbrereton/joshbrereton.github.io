@@ -12,6 +12,8 @@ f = Math.round(f * 1) / 1;
 return f;
 }
 else {
-    f = t;
+    f = N/A;
+    return f;
 }
-}
+
+} 
