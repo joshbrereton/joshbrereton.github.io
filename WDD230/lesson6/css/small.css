@@ -117,17 +117,19 @@ header {
     text-align: center;
 }
 .sunny {
-    padding: 2px 2px 2px 2px;
-    border: 2px solid black;
+    border: 3px solid black;
     padding: 25px;
+    background-color: #4785C2;
     margin: 0 5px;
 }
-.sunandclouds {
-     padding: 2px 2px 2px 2px;
-    border: 2px solid black;
-    padding: 25px;
-    margin: 0 5px;
-}
+ .wow1 {
+     border: .8px solid #999;
+     background-color: lightgreen;
+     margin: 0 auto;
+ }
+ .cover {
+     border: 2px solid #999;
+ }
 .friday {
      padding: 2px 2px 2px 2px;
     border: 2px solid black;
