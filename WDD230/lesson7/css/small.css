@@ -11,7 +11,6 @@ body {
 }
 img {
     width: 400px;
-    height: 300px;
     margin-top: 10px;
 }
 picture img[data-src] {
