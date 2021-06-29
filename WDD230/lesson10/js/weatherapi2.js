@@ -14,7 +14,7 @@ fiveDayForecast.forEach(x => {
     console.log(d);
    document.getElementById(`dayofweek${day+1}`).textContent = dayOfWeek[d.getDay()];
    document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
-   const imagesrc = 'https://openweathermap.org/img/w/ + "jsObject.weather[0].icon" + "day+1".png'
+   const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon.day+1}.png`;
     document.getElementById('icon').setAttribute('src', imagesrc);
     document.getElementById('icon').setAttribute('alt', description)
    day++
