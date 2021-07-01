@@ -38,14 +38,10 @@
     flex: 1 1 100%;
     flex-direction: row-reverse;
 }
-.wrap {
+
+.mid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-align-items: center;
-    justify-items: center;
-}
-.happy {
-    margin: 0 auto;
 }
 .love:hover {
     box-shadow: 0 0 50px;

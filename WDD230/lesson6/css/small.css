@@ -128,7 +128,18 @@ header {
      margin: 0 auto;
  }
  .cover {
-     border: 2px solid #999;
+     display: flex;
+ }
+ .dayofweek {
+     border: 3px solid black;
+    padding: 25px;
+    background-color: #4785C2;
+    margin: 0 5px
+ }
+ .container {
+      border: .8px solid #999;
+     background-color: lightgreen;
+     margin: 0 auto
  }
 .friday {
      padding: 2px 2px 2px 2px;
@@ -185,6 +196,12 @@ header {
 }
 .love {
     margin: 0 auto;
+}
+.happy {
+    border: 5px solid rgb(112, 110, 110);
+    background-color: lightgreen;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 /* --------------------Form------------------*/
 form fieldset {

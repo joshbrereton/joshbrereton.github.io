@@ -4,7 +4,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&uni
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-     //console.log(jsObject);
+     console.log(jsObject);
     const temp = document.querySelector('#temperature');
     temp.textContent = jsObject.main.temp.toFixed(0);
     const currently = document.querySelector('#currently');
@@ -18,3 +18,17 @@ fetch(apiURL)
     const humidity = document.querySelector('#humidity');
     humidity.textContent = jsObject.main.humidity;
 });
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+.then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+      //console.log(jsonObject);
+      const event = document.querySelector('#event');
+      event.textContent = jsonObject.towns[0].events[0];
+      const another = document.querySelector('#another');
+      another.textContent = jsonObject.towns[0].events[1];
+      const another1 = document.querySelector('#another1');
+      another1.textContent = jsonObject.towns[0].events[2];
+  })
