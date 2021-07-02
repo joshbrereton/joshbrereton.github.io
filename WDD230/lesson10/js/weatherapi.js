@@ -24,11 +24,11 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-      //console.log(jsonObject);
+      console.log(jsonObject);
       const event = document.querySelector('#event');
-      event.textContent = jsonObject.towns[0].events[0];
+      event.textContent = jsonObject.towns[6].events[0];
       const another = document.querySelector('#another');
-      another.textContent = jsonObject.towns[0].events[1];
+      another.textContent = jsonObject.towns[6].events[1];
       const another1 = document.querySelector('#another1');
-      another1.textContent = jsonObject.towns[0].events[2];
+      another1.textContent = jsonObject.towns[6].events[2];
   })

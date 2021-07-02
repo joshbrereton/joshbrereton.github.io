@@ -49,4 +49,11 @@ h2 {
 .happy {
     margin: 0 auto;
 }
+ .cover {
+     display: flex;
+ }
+ .fiveday {
+     display: flex;
+     text-align: center;
+ }
 }

@@ -128,10 +128,13 @@ header {
      margin: 0 auto;
  }
  .cover {
-     display: flex;
+     display: none;
+ }
+ .fiveday {
+     display: none;
  }
  .dayofweek {
-     border: 3px solid black;
+     border: 3px solid blue;
     padding: 25px;
     background-color: #4785C2;
     margin: 0 5px
@@ -198,7 +201,7 @@ header {
     margin: 0 auto;
 }
 .happy {
-    border: 5px solid rgb(112, 110, 110);
+    border: 5px solid blue;
     background-color: lightgreen;
     padding-bottom: 5px;
     margin-bottom: 5px;

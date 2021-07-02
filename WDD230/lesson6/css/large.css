@@ -38,6 +38,13 @@
     flex: 1 1 100%;
     flex-direction: row-reverse;
 }
+ .cover {
+     display: flex;
+ }
+ .fiveday {
+     display: flex;
+     text-align: center;
+ }
 
 .mid {
     display: grid;

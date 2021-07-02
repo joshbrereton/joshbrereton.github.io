@@ -120,3 +120,6 @@ article {
     display: grid;
     grid-template-columns: 1fr;
 }
+.love {
+    background-color: #4785C2;
+}
