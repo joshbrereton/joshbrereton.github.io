@@ -5,7 +5,7 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
       
-     console.log(jsObject);
+     //console.log(jsObject);
     const temp = document.querySelector('#temperature');
     temp.textContent = jsObject.main.temp.toFixed(0);
     const currently = document.querySelector('#currently');

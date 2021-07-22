@@ -14,14 +14,14 @@ nav {
     text-align: center;
 }
 .navigation a:hover {
-    color: white;
-    background-color: blue;
+    color: rgb(156, 147, 147);
+    background-color: brown;
 }
 .navigation a:active {
- background-color: darkorchid;
+ background-color: #F25F5C;
 }
 .navigation a:focus {
-    background-color: darkorchid;
+    background-color: #F25F5C;
 }
 .navigation li:first-child {
     display: block;
@@ -41,25 +41,39 @@ nav {
     display: block;
 }
 header, footer, .love{
-    background-color: #4785C2;
+    background-color: #FFE066;
     padding: 10px;
 }
 h1 {
     font-size: 1.5rem;
-    color: #140800;
+    color: #247BA0;
 }
 h2 {
     font-size: 1rem;
 }
 h2, p {
-    color: #140800;
-    font-family: 'Lora', serif;
+    color: black;
+    font-family: 'PT Sans Caption', sans-serif;
 }
-.gem {
-    height: 65px;
-    width: 65px;
-    float: left;
-    margin-right: 10px;
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.forestriv {
+    text-align: right;
+}
+.statement {
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: center;
+    margin-left: 35px;
+}
+.quote {
+    grid-column: 1/2;
+    grid-row: 2;
+    text-align: center;
+    margin-left: 35px;
 }
 .sun {
     height: 200px;
@@ -93,12 +107,8 @@ header {
     flex-direction: column;
     align-items: flex-start;
 }
-.r {
-    font-style: italic;
-    font-weight: 700px;
-}
 #lastupdate {
-    color: yellow;
+    color: #247BA0;
 }
 .herodiv .centered img {
     margin: 0 auto;
@@ -189,20 +199,45 @@ header {
     margin: 0 auto;
 }
 .happy {
-    border: 5px solid blue;
-    background-color: lightgreen;
+    border: 5px solid #247BA0;
+    background-color: #F25F5C ;
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
-/* --------------------Form------------------*/
-form fieldset {
+.threeday {
+     display: flex;
+     text-align: center;
+ }
+ .gall {
+     display: grid;
+     grid-template-columns: 1fr;
+ }
+ img {
+     margin: 5px 5px;
+ }
+ a.btn {
+     margin: 10px 10px;
+
+     color: #FFE066;
+     background-color: #247BA0;
+     padding: 15 15px;
+     font-size: 40px;
+ }
+ a.btn:hover {
+     background-color: #F25F5C;
+ }
+ .cover {
+     border: 2px solid #F25F5C;
+     padding: 2px 2px;
+ }
+ form fieldset {
     margin: 20px 0;
-    border: 1px solid blue;
+    border: 1px solid #247BA0;
     border-radius: 8px;
     padding: 5px 2%;
 }
 form legend {
-    color: blue;
+    color: #247BA0;
     margin: 0 5px;
     padding: 0 2px;
 }
@@ -212,13 +247,13 @@ form label {
 form label.top, form div {
     display: block;
     padding-top: 5px;
-    color: red;
+    color: #F25F5C;
     font-size: 14px;
 }
 form label.roll {
     display: block;
     padding-top: 5px;
-    color: red;
+    color: #F25F5C;
     font-size: 14px;
     margin: 20px 0;
 }
@@ -240,7 +275,7 @@ form label.sbs {
 }
 form input.submitBtn {
     border: none;
-    background-color: red;
+    background-color: #247BA0;
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -249,11 +284,26 @@ form input.submitBtn {
     max-width: 20rem;
 }
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left: #F25F5C solid 6px;
 }
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
-img.smart {
-    margin-top: 10px;
+section {
+    border: 5px solid #F25F5C;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section .flex {
+    display: none;
+}
+.straight {
+    margin-left: 100px;
+    padding: 5px;
+    background-color: #247BA0;
+}
+.board {
+    margin-left: 100px;
 }

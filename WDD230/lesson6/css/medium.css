@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 32.5em) {
 h1 {
     font-size: 2.5rem;
 }
@@ -33,18 +33,16 @@ h2 {
         box-shadow: 0 0 30px #333;
         opacity: .9;
     }
-    .love {
+     .love {
     display: flex;
     flex-direction: row-reverse;
 }
 .connect {
     flex: 1 1 100%;
 }
-.wrap {
+.mid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
 }
 .happy {
     margin: 0 auto;

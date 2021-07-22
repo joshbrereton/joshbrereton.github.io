@@ -1,0 +1,47 @@
+{
+  "businesses": [
+    {
+      "name": "Mystery Escape Room",
+      "phone": "801-473-2780",
+      "email": "bookings@mysteryescaperoom.com",
+      "picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fatthegateway.com%2Fdirectory%2Fentertainment%2Fmystery-escape-room%2F&psig=AOvVaw2aof6tKwlqDyULhSOky17c&ust=1627013664088000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIi30a7o9fECFQAAAAAdAAAAABAN",
+      "address": "https://www.mysteryescaperoom.com"
+    },
+    { 
+      "name": "Gallivan Center",
+      "phone": "(801) 535-6110",
+      "email": "gallivanvenue@slcgov.com",
+      "address": "https://thegallivancenter.com"
+    },
+     {
+      "name": "K1 Speed",
+      "phone": "866-813-5241",
+      "email": "No Email",
+      "address": "https://www.k1speed.com"
+    },
+     {
+	"name": "fat Cats",
+      "phone": "(801) 753-9045",
+      "email": "No Email",
+      "address": "https://www.fatcatsfun.com/saltlakecity#"
+    },
+     {
+	"name": "Salt Lake Golf Lounge",
+      "phone": "385-259-0807",
+      "email": "No Email",
+      "address": "https://slgolflounge.com"
+    },
+     {
+	"name": "Bonwood Bowl",
+      "phone": "(801) 487-7758",
+      "email": "No Email",
+      "address": "https://bonwoodbowl.com"
+    },
+     {
+       "name": "Tinkers Cat Cafe",
+      "phone": "801-519-CATS (2287)",
+      "email": "No Email",
+      "address": "https://www.tinkerscatcafe.com"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 37.5em) {
 	.navigation {
 		display: flex;
 	}
@@ -31,9 +31,6 @@
         box-shadow: 0 0 30px #333;
         opacity: .9;
     }
-.love {
-    display: flex;
-}
 .connect {
     flex: 1 1 100%;
     flex-direction: row-reverse;

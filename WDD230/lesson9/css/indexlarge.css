@@ -38,32 +38,13 @@
 .towninfo {
     margin: 0px;
     padding: 0px;
+    display: block;
 }
 section {
     font-size: 11px;
 }
-.basketball {
+article {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.p {
-    grid-column: 1;
-}
-.towninfo {
-    grid-column: 1;
-}
-.ss {
-    grid-column: 2;
-    margin-right: 100px;
-}
-.towninfo2 {
-    grid-column: 2;
-
-}
-.fh {
-    grid-column: 3;
-}
-.towninfo3 {
-    grid-column: 3;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 }
