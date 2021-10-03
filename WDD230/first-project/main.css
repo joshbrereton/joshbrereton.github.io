@@ -1,62 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 h1, h2 {
-  font-family: lora, serif;
+  font-family: lora;
 }
 
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
   background-color: #6495ED;
   padding: 30px;
   text-align: right;
-  flex: 20%;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
 }
+
 header a {
   color: #FAEBD7;
   text-decoration: none;
 }
+
 header a:active {
   color: #DEB887;
 }
+
 header a:hover {
   color: white;
   text-decoration: underline;
 }
-h2 a {
-  color: black;
-  text-decoration: none;
-}
-h2 a:active {
-  color: #DEB887;
-}
-h2 a:hover {
-  color: #6495ED;
-  text-decoration: underline;
-}
+
 p a {
   color: #6495ED;
   text-decoration: none;
 }
-p a:active {
+
+p a a:active {
   color: #DEB887;
 }
-p a:hover {
+
+p a a:hover {
   text-decoration: underline;
 }
+
 ul {
   list-style-type: none;
 }
 
 main {
   background-color: #FAEBD7;
-  flex: 80%;
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
 }
 
 article {
@@ -64,8 +65,21 @@ article {
 }
 
 @media (max-width: 700px) {
-  div {
-    display: flex;
-    flex-direction: column;
+  div > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column nowrap;
+  }
+  div * main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column nowrap;
   }
 }
+/*# sourceMappingURL=main.css.map */
