@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+// Color Variables //
+$blue: #6495ED;
+$white: #FAEBD7;
+$darkwhite: #DEB887;
+
+div {
+  display: flex;
+}
+
+
+h1, h2 {
+  font-family: lora;
+}
+
+body {
+  margin: 0;
+}
+
+// Nesting Starts:
+header {
+  background-color: $blue;
+  padding: 30px;
+  text-align: right;
+  flex: 20%;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  a:active {
+    color: $darkwhite; 
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+p a {
+    color: #6495ED;
+    text-decoration: none;
+    a:active {
+    color: #DEB887;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+main {
+  background-color: $white;
+  flex: 80%;
+}
+
+article {
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+    // Mixin used //
+  @mixin div ($axis, $wrap: nowrap) {
+      display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        -webkit-flex-flow: $axis $wrap;
+        -ms-flex-flow: $axis $wrap;
+        flex-flow: $axis $wrap;
+  }
+  div > header {
+      @include div(column);
+  }
+  div * main {
+      @include div(column);
+  }
+}

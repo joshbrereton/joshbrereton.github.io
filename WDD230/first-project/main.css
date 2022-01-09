@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1, h2 {
+  font-family: lora;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #6495ED;
+  padding: 30px;
+  text-align: right;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+header a {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+
+header a:active {
+  color: #DEB887;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+p a {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+p a a:active {
+  color: #DEB887;
+}
+
+p a a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  background-color: #FAEBD7;
+  -webkit-box-flex: 80%;
+      -ms-flex: 80%;
+          flex: 80%;
+}
+
+article {
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  div > header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column nowrap;
+  }
+  div * main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-flow: column nowrap;
+  }
+}
+/*# sourceMappingURL=main.css.map */
